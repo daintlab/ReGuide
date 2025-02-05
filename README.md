@@ -1,4 +1,6 @@
-<h1 align="center">ReGuide: Reflexible Guidance</h1>
+
+
+# ReGuide: Reflexible Guidance
 
 [![arXiv](https://img.shields.io/badge/arXiv-2410.14975-FF9999.svg)](https://arxiv.org/abs/2410.14975) [![OpeRreview](https://img.shields.io/badge/OpenReview-ReGuide-6699FF.svg)](https://openreview.net/forum?id=R4h5PXzUuU&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2025%2FConference%2FAuthors%23your-submissions))
 
@@ -97,12 +99,15 @@ For **prompt-respons pairs**, each JSONL file we provide is structured as follow
 
 The `image name` field in the JSONL files corresponds to the actual file paths of the image files. If you followed the instructions above, the `image name` values will match their actual locations, so you can use them directly!
 
+# Citation
+```
 @inproceedings{kim2025reflexive,
   title={Reflexible Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation},
   author={Kim, Jihyo and Lee, Seulbi and Hwang, Sangheum},
   booktitle={International Conference on Learning Representations},
   year={2025}
 }
+```
 
 
 
