@@ -105,7 +105,7 @@ For **prompt-respons pairs**, each JSONL file we provide is structured as follow
 }
 ```
 
-The `image_id` field in the JSONL files corresponds to the actual file paths of the image files as mentioned above. If you followed the preliminary steps above, the `image_id` values will match their actual locations, so you can use them directly!
+The `image_id` field in the JSONL files corresponds to the actual file paths of the image files as mentioned above. If you followed the preliminary steps above, the `image_id` values will match their actual locations, so you can use them directly.
 
 ## Citation
 ```
