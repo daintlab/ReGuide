@@ -97,7 +97,12 @@ For **prompt-respons pairs**, each JSONL file we provide is structured as follow
 
 The `image name` field in the JSONL files corresponds to the actual file paths of the image files. If you followed the instructions above, the `image name` values will match their actual locations, so you can use them directly!
 
-
+@inproceedings{kim2025reflexive,
+  title={Reflexible Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation},
+  author={Kim, Jihyo and Lee, Seulbi and Hwang, Sangheum},
+  booktitle={International Conference on Learning Representations},
+  year={2025}
+}
 
 
 
