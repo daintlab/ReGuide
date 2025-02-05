@@ -2,10 +2,10 @@
 Official repository for "Reflexible Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation"
 
 ## Framework: OoDD in Vision-Language Models
-![Framework](./asset/overview.pdf)
+![Framework](./asset/overview.png)
 
 ## Reflexive Guidance
-![Framework](./asset/reguide-framework.pdf)
+![ReGuide](./asset/reguide-framework.png)
 
 ### Citation
 ```
