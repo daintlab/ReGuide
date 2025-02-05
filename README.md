@@ -14,7 +14,7 @@ With the recent emergence of foundation models trained on internet-scale data an
 <img src="./assets/overview.png">
 Given the vast amount and broad domain coverage of data used to train LVLMs, we frame the OoDD problem for LVLMs based on the zero-shot OoDD scenario defined for CLIP. Our prompt consists of four components: a task description, an explanation of the rejection class, guidelines, and examples for the response format.
 
-### Framwork of ReGuide
+### ReGuide Framework
 <img src="./assets/reguide-framework.png">
 We introduce a simple and model-agnostic prompting strategy, Reflexive Guidance (ReGuide), to enhance the OoD detectability of LVLMs. The LVLM’s strong generalization ability has been demonstrated through its performance across various downstream tasks. Therefore, we leverage the LVLM itself to obtain guidance for OoDD from its powerful zero-shot visual recognition capabilities. ReGuide is implemented in a two-stage process: Stage 1 Image-adaptive class suggestions and Stage 2 OoDD with suggested classes.
 
@@ -63,7 +63,7 @@ data
     └─ images_largesacle
 ```
 
-Image id in our dataset JSONL files are from image lists in this OpenOOD directory.
+`image_id` in our dataset JSONL files are the actual path of images in this OpenOOD directory, for example, `./data/images_classic/cifar10/test/airplane/0001.png`.
 
 ### Dataset
 For **list of images**, each JSON file we provide is structured as follows:
@@ -105,14 +105,14 @@ For **prompt-respons pairs**, each JSONL file we provide is structured as follow
 }
 ```
 
-The `image name` field in the JSONL files corresponds to the actual file paths of the image files. If you followed the instructions above, the `image name` values will match their actual locations, so you can use them directly!
+The `image_id` field in the JSONL files corresponds to the actual file paths of the image files as mentioned above. If you followed the preliminary steps above, the `image_id` values will match their actual locations, so you can use them directly!
 
 ## Citation
 ```
 @inproceedings{kim2025reflexive,
   title={Reflexible Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation},
-  author={Kim, Jihyo and Lee, Seulbi and Hwang, Sangheum},
-  booktitle={International Conference on Learning Representations},
+  author={Jihyo Kim and Seulbi Lee and Sangheum Hwang},
+  booktitle={The Thirteenth International Conference on Learning Representations},
   year={2025}
 }
 ```
