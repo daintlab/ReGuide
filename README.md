@@ -12,9 +12,11 @@ With the recent emergence of foundation models trained on internet-scale data an
 
 ### OoD Detection for LVLMs
 <img src="./assets/overview.png">
+Given the vast amount and broad domain coverage of data used to train LVLMs, we frame the OoDD problem for LVLMs based on the zero-shot OoDD scenario defined for CLIP. Our prompt consists of four components: a task description, an explanation of the rejection class, guidelines, and examples for the response format.
 
 ### Framwork of ReGuide
 <img src="./assets/reguide-framework.png">
+We introduce a simple and model-agnostic prompting strategy, Reflexive Guidance (ReGuide), to enhance the OoD detectability of LVLMs. The LVLM’s strong generalization ability has been demonstrated through its performance across various downstream tasks. Therefore, we leverage the LVLM itself to obtain guidance for OoDD from its powerful zero-shot visual recognition capabilities. ReGuide is implemented in a two-stage process: Stage 1 Image-adaptive class suggestions and Stage 2 OoDD with suggested classes.
 
 ### Dataset & Response
 To enhance reproducibility and transparency, we provide subsets of the datasets and corresponding responses used in our experiments. 
