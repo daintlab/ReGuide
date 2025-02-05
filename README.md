@@ -1,6 +1,6 @@
 
 
-# ReGuide: Reflexible Guidance
+# Reflexive Guidance (ReGuide)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2410.14975-FF9999.svg)](https://arxiv.org/abs/2410.14975) [![OpeRreview](https://img.shields.io/badge/OpenReview-ReGuide-6699FF.svg)](https://openreview.net/forum?id=R4h5PXzUuU&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2025%2FConference%2FAuthors%23your-submissions))
 
@@ -18,7 +18,7 @@ Given the vast amount and broad domain coverage of data used to train LVLMs, we 
 <img src="./assets/reguide-framework.png">
 We introduce a simple and model-agnostic prompting strategy, Reflexive Guidance (ReGuide), to enhance the OoD detectability of LVLMs. The LVLM’s strong generalization ability has been demonstrated through its performance across various downstream tasks. Therefore, we leverage the LVLM itself to obtain guidance for OoDD from its powerful zero-shot visual recognition capabilities. ReGuide is implemented in a two-stage process: Stage 1 Image-adaptive class suggestions and Stage 2 OoDD with suggested classes.
 
-### Dataset & Response
+## Dataset & Response
 To enhance reproducibility and transparency, we provide subsets of the datasets and corresponding responses used in our experiments. 
 
 The structure is as follows, with the results for each sample located under the model directory.
@@ -43,14 +43,16 @@ response
             └─ filtering
 ```
 
-### Detail of an specific data file
+### Preliminary
+Our JSONL files for dataset are reorganized based on benchamarks provided by [OpenOOD](https://github.com/Jingkang50/OpenOOD). You can prepare image lists by following the steps below.
+
 First, create the required data directory structure by running the following command:
 
 ```sh
 mkdir data
 ```
 
-You can download the dataset using the data download script provided by [OpenOOD](https://github.com/Jingkang50/OpenOOD). After downloading, please ensure that the `images_classic` and `images_largescale` directories are placed inside the `./data` directory. The directory structure should look like this:
+Then, you can download the dataset using the data download script provided by [OpenOOD](https://github.com/Jingkang50/OpenOOD). After downloading, please ensure that the `images_classic` and `images_largescale` directories are placed inside the `./data` directory. The directory structure should look like this:
 
 ```sh
 data
@@ -61,6 +63,7 @@ data
     └─ images_largesacle
 ```
 
+### Dataset
 For **list of images**, each JSON file we provide is structured as follows:
 - Baseline
 ```json
@@ -77,6 +80,7 @@ For **list of images**, each JSON file we provide is structured as follows:
 }
 ```
 
+### Response
 For **prompt-respons pairs**, each JSONL file we provide is structured as follows for **baseline** and **ReGuide** experiments:
 
 - Baseline
@@ -101,7 +105,7 @@ For **prompt-respons pairs**, each JSONL file we provide is structured as follow
 
 The `image name` field in the JSONL files corresponds to the actual file paths of the image files. If you followed the instructions above, the `image name` values will match their actual locations, so you can use them directly!
 
-# Citation
+## Citation
 ```
 @inproceedings{kim2025reflexive,
   title={Reflexible Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation},
