@@ -63,6 +63,8 @@ data
     └─ images_largesacle
 ```
 
+Image id in our dataset JSONL files are from image lists in this OpenOOD directory.
+
 ### Dataset
 For **list of images**, each JSON file we provide is structured as follows:
 - Baseline
